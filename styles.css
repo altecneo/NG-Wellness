@@ -202,8 +202,8 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(61,73,53,0.12); }
 /* ─── HERO ─── */
 .hero {
   min-height: 100vh;
-  background-image: url('backdrop.png') no-repeat center/cover
-  background: linear-gradient(135deg, #2A3024 0%, var(--sage-dark) 45%, #4A5A3E 80%, #5C6B52 100%);
+  background-image: url('backdrop.png') no-repeat center/cover linear-gradient(135deg, #2A3024 0%, var(--sage-dark) 45%, #4A5A3E 80%, #5C6B52 100%);
+ /* background: linear-gradient(135deg, #2A3024 0%, var(--sage-dark) 45%, #4A5A3E 80%, #5C6B52 100%); */
   display: flex; align-items: center; justify-content: center;
   text-align: center; padding: 120px 40px 80px;
   position: relative; overflow: hidden;
