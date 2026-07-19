@@ -13,6 +13,24 @@ function showPage(name) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
+function download(fileName) {
+    // 1. Create a hidden anchor element
+    const link = document.createElement('a');
+    
+    // 2. Set the path to your file (update the folder path if needed)
+    link.href = fileName; 
+    
+    // 3. Force the download and set the saved file name
+    link.download = fileName; 
+    
+    // 4. Append, click, and clean up
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+
+
 function toggleMenu() {
   document.getElementById('navLinks').classList.toggle('open');
 }
