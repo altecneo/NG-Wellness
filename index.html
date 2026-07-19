@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>North Georgia Functional Wellness | Beauty for Broken Wellness</title>
+<title>North Georgia Functional Wellness | North Georgia Functional Wellness</title>
 <meta name="description" content="Personalized functional wellness coaching, root-cause health support, and holistic wellness services in North Georgia. Julie Miles, ND — serving Cumming, GA and virtually nationwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 <!-- ─── NAVIGATION ─── -->
 <nav id="mainNav">
   <a href="#" class="nav-logo" onclick="showPage('home'); return false;">
-    <img src="logo.png" alt="North Georgia Functional Wellness — Beauty for Broken">
+    <img src="logo.png" alt="North Georgia Functional Wellness">
   </a>
   <ul class="nav-links" id="navLinks">
     <li><a href="#" onclick="showPage('home'); return false;"      data-page="home">Home</a></li>
@@ -38,9 +38,10 @@
 <div id="page-home" class="page active">
 
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero hero-backdrop">
+    <div class="hero-overlay"></div>
     <div class="hero-inner">
-      <span><img src="logo.png" alt="North Georgia Functional Wellness — Beauty for Broken" width="614" height="409"></span><br>
+      <span><img src="logo.png" alt="North Georgia Functional Wellness" width="520" style="max-width:90vw;filter:drop-shadow(0 6px 32px rgba(0,0,0,0.55));"></span><br>
       <h1 style="font-size: 220%">Root Cause Wellness for<br><em>Body, Mind and Spirit</em></h1>
       <p>Personalized wellness coaching, functional testing, and practical lifestyle strategies designed to support lasting vitality — from the inside out.</p>
       <div class="hero-btns">
@@ -190,14 +191,9 @@
     <div class="container">
       <div class="about-grid">
         <div>
-          <div class="about-image-box">
-            <svg width="110" height="140" viewBox="0 0 110 140" fill="none">
-              <circle cx="55" cy="50" r="32" fill="var(--warm-gray)"/>
-              <ellipse cx="55" cy="118" rx="42" ry="26" fill="var(--warm-gray)"/>
-              <path d="M55 112 L55 76" stroke="var(--gold)" stroke-width="2"/>
-              <path d="M55 84 Q36 74 22 68" stroke="var(--gold)" stroke-width="1.5" fill="none"/>
-              <path d="M55 80 Q74 70 90 64" stroke="var(--gold)" stroke-width="1.5" fill="none"/>
-            </svg>
+          <div class="about-image-box" style="padding:0;overflow:hidden;border-radius:4px;min-height:auto;position:relative;">
+            <img src="JulieMiles.jpg" alt="Julie Miles, ND — North Georgia Functional Wellness"
+              style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;border-radius:4px;min-height:420px;">
           </div>
           <div class="credentials-block">
             <div class="cred-item"><h4>ND</h4><p>Naturopathic Doctor</p></div>
@@ -213,7 +209,7 @@
           <h2 class="section-title">A Practice Built on <em>Passion &amp; Purpose</em></h2>
           <p style="color:var(--text-mid);line-height:1.85;margin-bottom:20px;">My passion for functional wellness grew from both professional experience and personal health challenges.</p>
           <p style="color:var(--text-mid);line-height:1.85;margin-bottom:20px;">After years of helping clients navigate complex health concerns, I became increasingly convinced that many people need more than symptom management. They need someone willing to listen, investigate, educate, and help identify potential underlying contributors to their health concerns.</p>
-          <p style="color:var(--text-mid);line-height:1.85;margin-bottom:36px;">Beauty for Broken Wellness was created to provide a personalized, client-centered approach that helps individuals understand their bodies and make informed decisions about their wellness.</p>
+          <p style="color:var(--text-mid);line-height:1.85;margin-bottom:36px;">North Georgia Functional Wellness was created to provide a personalized, client-centered approach that helps individuals understand their bodies and make informed decisions about their wellness.</p>
 
           <div style="background:var(--cream-dark);border-left:4px solid var(--gold);padding:28px 32px;border-radius:4px;margin-bottom:36px;">
             <p style="font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-style:italic;color:var(--sage-dark);line-height:1.5;margin-bottom:12px;">"I believe true wellness involves caring for the whole person — body, mind, and spirit."</p>
@@ -266,16 +262,7 @@
           </div>
         </div>
 
-        <div class="service-card">
-          <div class="service-card-head">
-            <h3>Allergy &amp; Sensitivity Support</h3>
-            <div class="service-price">$90</div>
-          </div>
-          <div class="service-card-body">
-            <p>Advanced Allergy Therapeutics (AAT) sessions available to support those experiencing allergy and sensitivity concerns. A gentle, non-invasive approach to wellness support.</p>
-            <button class="book-btn" onclick="openBooking('Allergy')">Book This Service</button>
-          </div>
-        </div>
+
 
         <div class="service-card">
           <div class="service-card-head">
@@ -290,34 +277,34 @@
 
         <div class="service-card">
           <div class="service-card-head">
-            <h3>Functional Lab Review</h3>
+            <h3>Functional Lab Consultation</h3>
             <div class="service-price">$125</div>
           </div>
           <div class="service-card-body">
-            <p>Comprehensive review of functional testing and laboratory findings with personalized wellness recommendations. Turns complex results into a clear, actionable strategy.</p>
-            <button class="book-btn" onclick="openBooking('Functional Lab')">Book This Service</button>
+            <p>Comprehensive review of functional testing and laboratory findings with personalized wellness recommendations. Turns complex results into a clear, actionable strategy for your health journey.</p>
+            <button class="book-btn" onclick="openBooking('Functional Lab Consultation')">Book This Service</button>
           </div>
         </div>
 
         <div class="service-card">
           <div class="service-card-head">
-            <h3>Functional Wellness Consultation</h3>
+            <h3>Functional Wellness Consultation &amp; Personalized Plan</h3>
             <div class="service-price">$150</div>
           </div>
           <div class="service-card-body">
-            <p>A one-on-one consultation designed to review health history, symptoms, lifestyle factors, and wellness goals while developing a personalized wellness roadmap tailored to your unique needs.</p>
-            <button class="book-btn" onclick="openBooking('Functional Wellness')">Book This Service</button>
+            <p>A one-on-one consultation designed to review health history, symptoms, lifestyle factors, and wellness goals — resulting in a fully personalized wellness roadmap tailored to your unique needs.</p>
+            <button class="book-btn" onclick="openBooking('Functional Wellness Consultation')">Book This Service</button>
           </div>
         </div>
 
         <div class="service-card">
           <div class="service-card-head">
-            <h3>Bioenergetic Assessment</h3>
+            <h3>Bio-Energetic Testing &amp; Consultation</h3>
             <div class="service-price">$425</div>
           </div>
           <div class="service-card-body">
-            <p>Advanced bioenergetic evaluation designed to identify areas of stress, imbalance, and potential underlying contributors to health concerns. A comprehensive, in-depth assessment experience.</p>
-            <button class="book-btn" onclick="openBooking('Bioenergetic')">Book This Service</button>
+            <p>Advanced bioenergetic evaluation designed to identify areas of stress, imbalance, and potential underlying contributors to health concerns. Includes a full consultation to review findings and personalize your wellness strategy.</p>
+            <button class="book-btn" onclick="openBooking('Bio-Energetic Testing')">Book This Service</button>
           </div>
         </div>
 
@@ -372,7 +359,7 @@
             <div class="founding-feature"><span class="founding-check">✓</span>Initial Wellness Consultation</div>
             <div class="founding-feature"><span class="founding-check">✓</span>Personalized Wellness Roadmap</div>
             <div class="founding-feature"><span class="founding-check">✓</span>Priority Scheduling</div>
-            <div class="founding-feature"><span class="founding-check">✓</span>50% Off First Bioenergetic Assessment</div>
+            <div class="founding-feature"><span class="founding-check">✓</span>50% Off First Bio-Energetic Testing &amp; Consultation</div>
             <div class="founding-feature"><span class="founding-check">✓</span>Founding Client Status &amp; Ongoing Support</div>
             <div class="founding-feature"><span class="founding-check">✓</span>15% Lifetime Discount on Services &amp; Supplements</div>
             <div style="margin-top:28px;">
@@ -391,7 +378,7 @@
             <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:14px;">Everything in Founding Client, plus:</p>
             <div class="founding-feature"><span class="founding-check">✓</span>Initial Wellness Consultation</div>
             <div class="founding-feature"><span class="founding-check">✓</span>Priority Scheduling &amp; Priority Access to New Services</div>
-            <div class="founding-feature"><span class="founding-check">✓</span>50% Off First Bioenergetic Assessment</div>
+            <div class="founding-feature"><span class="founding-check">✓</span>50% Off First Bio-Energetic Testing &amp; Consultation</div>
             <div class="founding-feature"><span class="founding-check">✓</span>15% Lifetime Discount on Services &amp; Supplements</div>
             <div class="founding-feature"><span class="founding-check" style="color:var(--gold);">+</span><strong>GI-MAP Comprehensive Analysis</strong></div>
             <div class="founding-feature"><span class="founding-check" style="color:var(--gold);">+</span><strong>GI-MAP Results Review Consultation</strong></div>
@@ -475,7 +462,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">Do you accept insurance?<span class="faq-icon">+</span></button>
-          <div class="faq-answer">No. Beauty for Broken Wellness is a cash-pay wellness practice. This allows us to focus entirely on your personalized wellness goals without the limitations of insurance-based care.</div>
+          <div class="faq-answer">No. North Georgia Functional Wellness is a cash-pay wellness practice. This allows us to focus entirely on your personalized wellness goals without the limitations of insurance-based care.</div>
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">What ages do you work with?<span class="faq-icon">+</span></button>
@@ -522,7 +509,7 @@
             <div class="contact-detail-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sage-dark)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
-            <div><strong>Email</strong><p>Julie@NorthGeorgiaFunctionalWellness.org</p></div>
+            <div><strong>Email</strong><p>julie@northgeorgiafunctionalwellness.com</p></div>
           </div>
 
           <div class="contact-detail">
@@ -593,19 +580,19 @@
     </div>
     <div>
       <h4>Contact</h4>
-      <p>Julie@NorthGeorgiaFunctionalWellness.org</p>
+      <p>julie@northgeorgiafunctionalwellness.com</p>
       <p style="margin-top:12px;">North Georgia<br>Virtual consultations available</p>
       <button class="btn-gold" style="margin-top:20px;font-size:11px;padding:10px 20px;" onclick="openBooking()">Book a Consultation</button>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2025 Beauty for Broken Wellness &mdash; North Georgia Functional Wellness. All rights reserved.</p>
-    <p>beautyforbrokenwellness.com</p>
+    <p>&copy; 2025 North Georgia Functional Wellness &mdash; North Georgia Functional Wellness. All rights reserved.</p>
+    <p>northgeorgiafunctionalwellness.com</p>
   </div>
 </footer>
 
 <div class="disclaimer">
-  The information provided through Beauty for Broken Wellness is intended for educational and informational purposes only and is not medical advice. Services are not intended to diagnose, treat, cure, or prevent any disease. Please consult your licensed healthcare provider regarding medical concerns and treatment decisions.
+  The information provided through North Georgia Functional Wellness is intended for educational and informational purposes only and is not medical advice. Services are not intended to diagnose, treat, cure, or prevent any disease. Please consult your licensed healthcare provider regarding medical concerns and treatment decisions.
 </div>
 
 
@@ -620,7 +607,7 @@
     <div class="booking-modal-head">
       <div>
         <h2>Book a Consultation</h2>
-        <p>North Georgia Functional Wellness &mdash; Julie Miles, ND</p>
+        <p>North Georgia Functional Wellness — Julie Miles, ND</p>
       </div>
       <button class="booking-close" onclick="closeBooking()">&times;</button>
     </div>
@@ -644,11 +631,10 @@
         <div class="bsvc-grid" id="serviceGrid">
           <div class="bsvc-item" onclick="selectService(this,'Bio-Terrain Urinalysis',55,'60 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Bio-Terrain Urinalysis</h4><p>60 min &bull; In-person or virtual</p></div><div class="bsvc-price">$55</div></div>
           <div class="bsvc-item" onclick="selectService(this,'Wellness Coaching',75,'45 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Wellness Coaching</h4><p>45 min &bull; Virtual available</p></div><div class="bsvc-price">$75</div></div>
-          <div class="bsvc-item" onclick="selectService(this,'Allergy &amp; Sensitivity Support',90,'60 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Allergy &amp; Sensitivity Support</h4><p>60 min &bull; In-person</p></div><div class="bsvc-price">$90</div></div>
           <div class="bsvc-item" onclick="selectService(this,'Assisted Lymphatic Therapy',99,'60 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Assisted Lymphatic Therapy</h4><p>60 min &bull; In-person</p></div><div class="bsvc-price">$99</div></div>
-          <div class="bsvc-item" onclick="selectService(this,'Functional Lab Review',125,'60 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Functional Lab Review</h4><p>60 min &bull; Virtual available</p></div><div class="bsvc-price">$125</div></div>
-          <div class="bsvc-item" onclick="selectService(this,'Functional Wellness Consultation',150,'75 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Functional Wellness Consultation</h4><p>75 min &bull; Virtual available</p></div><div class="bsvc-price">$150</div></div>
-          <div class="bsvc-item" onclick="selectService(this,'Bioenergetic Assessment',425,'90 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Bioenergetic Assessment</h4><p>90 min &bull; In-person</p></div><div class="bsvc-price">$425</div></div>
+          <div class="bsvc-item" onclick="selectService(this,'Functional Lab Consultation',125,'60 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Functional Lab Consultation</h4><p>60 min &bull; Virtual available</p></div><div class="bsvc-price">$125</div></div>
+          <div class="bsvc-item" onclick="selectService(this,'Functional Wellness Consultation &amp; Personalized Plan',150,'75 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Functional Wellness Consultation &amp; Personalized Plan</h4><p>75 min &bull; Virtual available</p></div><div class="bsvc-price">$150</div></div>
+          <div class="bsvc-item" onclick="selectService(this,'Bio-Energetic Testing &amp; Consultation',425,'90 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Bio-Energetic Testing &amp; Consultation</h4><p>90 min &bull; In-person</p></div><div class="bsvc-price">$425</div></div>
           <div class="bsvc-item" onclick="selectService(this,'Founding Client Package',547,'75 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Founding Client Package</h4><p>75 min &bull; Introductory</p></div><div class="bsvc-price">$547</div></div>
         </div>
         <div class="booking-nav">
@@ -713,7 +699,7 @@
         <h3>Review &amp; Confirm</h3>
         <p>Please review your appointment details before confirming.</p>
         <div class="bconfirm-box">
-          <div class="bconfirm-head"><div><h4 id="confirm-service"></h4><p>North Georgia Functional Wellness &mdash; Julie Miles, ND</p></div></div>
+          <div class="bconfirm-head"><div><h4 id="confirm-service"></h4><p>North Georgia Functional Wellness — Julie Miles, ND</p></div></div>
           <div class="bconfirm-rows">
             <div class="bconfirm-row"><strong>Date</strong><span id="confirm-date"></span></div>
             <div class="bconfirm-row"><strong>Time</strong><span id="confirm-time"></span></div>
@@ -742,7 +728,7 @@
           </div>
           <h3>You're Confirmed!</h3>
           <p id="success-msg"></p>
-          <p style="font-size:0.85rem;color:var(--text-light);margin-top:16px;">Questions? Email Julie@NorthGeorgiaFunctionalWellness.org</p>
+          <p style="font-size:0.85rem;color:var(--text-light);margin-top:16px;">Questions? Email julie@northgeorgiafunctionalwellness.com</p>
           <div style="margin-top:32px;"><button class="btn-sage" onclick="closeBooking()">Close</button></div>
         </div>
       </div>
