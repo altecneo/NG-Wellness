@@ -165,7 +165,7 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(61,73,53,0.12); }
 .btn-plum:hover { background: var(--sage-mid); transform: translateY(-2px); }
 
 /* ─── LAYOUT ─── */
-.section { padding: 46px 40px; }
+.section { padding: 6px 40px; }
 .section-alt { background: var(--cream-dark); }
 .section-sage { background: var(--sage-dark); }
 .section-sage h2, .section-sage h3 { color: white; }
