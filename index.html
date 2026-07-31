@@ -3,12 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>North Georgia Functional Wellness | North Georgia Functional Wellness</title>
-<meta name="description" content="Personalized functional wellness coaching, root-cause health support, and holistic wellness services in North Georgia. Julie Miles, ND — serving Cumming, GA and virtually nationwide.">
+<title>North Georgia Functional Wellness | Holistic Health Coach </title>
+<meta name="description" content="North Georgia Functional Wellness - Julie Miles, ND, CHHP, CLT offers personalized functional wellness coaching, root-cause health support, bio-terrain urinalysis, lymphatic therapy, and bioenergetic testing in Cumming, GA. Virtual consultations available nationwide.">
+<meta name="keywords" content="functional wellness North Georgia, functional wellness Cumming GA, holistic health coach Cumming GA, root cause health North Georgia, functional wellness coach Georgia, natural health solutions Forsyth County, wellness coaching Cumming GA, hormone balance North Georgia, gut health coach Georgia, fatigue solutions Cumming GA, lymphatic therapy North Georgia, bio terrain urinalysis Georgia, DUTCH hormone testing Georgia, GI MAP testing Georgia, bioenergetic testing Georgia, functional lab testing North Georgia, holistic wellness practitioner Georgia, integrative health coach Cumming, naturopathic doctor North Georgia, personalized wellness plan Georgia, women's health coach Cumming GA, adrenal support North Georgia, thyroid wellness Georgia, blood sugar balance coach Georgia, virtual wellness coach Georgia, wellness coaching near me, holistic health near Alpharetta, holistic health near Canton GA, functional medicine alternatives Georgia, root cause wellness near me">
+<meta property="og:title" content="North Georgia Functional Wellness | Julie Miles, ND, CHHP, CLT">
+<meta property="og:description" content="Personalized functional wellness coaching, root-cause health support, and holistic services in Cumming, GA. Virtual consultations available.">
+<meta property="og:url" content="https://www.northgeorgiafunctionalwellness.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.northgeorgiafunctionalwellness.com/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" sizes="192x192" href="favicon-192.png">
 </head>
 <body>
 
@@ -22,8 +31,9 @@
     <li><a href="#" onclick="showPage('about'); return false;"     data-page="about">About</a></li>
     <li><a href="#" onclick="showPage('services'); return false;"  data-page="services">Services</a></li>
     <li><a href="#" onclick="showPage('founding'); return false;"  data-page="founding">Founding Client</a></li>
-    <li><a href="#" onclick="showPage('resources'); return false;" data-page="resources">Resources</a></li>
+    <li><a href="#" onclick="showPage('resources'); return false;" data-page="resources">Connect and Learn</a></li>
     <li><a href="#" onclick="showPage('faq'); return false;"       data-page="faq">FAQ</a></li>
+    <li><a href="#" onclick="showPage('contact'); return false;"   data-page="contact">Contact</a></li>
     <li><a href="#" onclick="openBooking(); return false;"         class="nav-cta">Book a Consultation</a></li>
   </ul>
   <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -42,11 +52,11 @@
     <div class="hero-overlay"></div>
     <div class="hero-inner">
       <span><img src="logo.png" alt="North Georgia Functional Wellness" width="520" style="max-width:90vw;filter:drop-shadow(0 6px 32px rgba(0,0,0,0.55));"></span><br>
-      <h1 style="font-size: 220%">Root Cause Wellness for<br><em>Body, Mind and Spirit</em></h1>
+      <h1 style="font-size: 220%">Root Cause Wellness for<br><em>Body, Mind & Spirit</em></h1>
       <p>Personalized wellness coaching, functional testing, and practical lifestyle strategies designed to support lasting vitality — from the inside out.</p>
       <div class="hero-btns">
         <button class="btn-primary" onclick="openBooking()">Schedule a Consultation</button>
-        <button class="btn-outline" onclick="showPage('about')">Meet Julie Miles</button>
+        <button class="btn-outline" onclick="showPage('about')">Meet Julie Miles, ND, CHHP, CLT</button>
       </div>
     </div>
   </section>
@@ -61,19 +71,13 @@
               <image href="JulieMiles.jpg" height="455" width="455">
             </svg>
           </div>
-          <br>
-          <h2>Julie Miles, ND</h2>
-          <div class="welcome-credentials">
-            <span class="credential-tag">ND</span>
-            <span class="credential-tag">CHHP</span>
-            <span class="credential-tag">CLT</span>
-            <span class="credential-tag">Certified Life Coach</span>
-            <span class="credential-tag">15+ Years Experience</span>
+          <div class="welcome-name-block">
+            <h2 style="margin-top:16px;margin-bottom:6px;">Julie Miles, ND, CHHP, CLT</h2>
+            <p style="color:var(--gold-muted);font-family:'Lato',sans-serif;font-size:0.9rem;font-weight:700;letter-spacing:0.08em;">Certified Life Coach &nbsp;|&nbsp; 15+ Years Experience</p>
           </div>
         </div>
         <div>
-          <span class="section-label">Welcome</span>
-          <h2 class="section-title">Here to Walk <em>Alongside You</em></h2>
+<h2 class="section-title">Here to Walk <em>Alongside You</em></h2>
           <p style="color:var(--text-mid);line-height:1.85;margin-bottom:20px;">For more than 15 years, I have had the privilege of walking alongside individuals and families seeking answers to complex health concerns. My passion is helping clients uncover potential root causes of symptoms and develop practical, personalized strategies that support the body's natural ability to heal and restore balance.</p>
           <p style="color:var(--text-mid);line-height:1.85;margin-bottom:36px;">Whether you're struggling with fatigue, digestive concerns, hormone imbalances, stress, or simply want to optimize your health, my goal is to provide education, encouragement, and individualized support every step of the way.</p>
           <button class="btn-sage" onclick="showPage('about')">My Full Story</button>
@@ -85,9 +89,8 @@
   <!-- Differentiators -->
   <section class="section section-alt">
     <div class="container text-center">
-      <span class="section-label">Our Approach</span>
-      <h2 class="section-title">What Makes <em>Us Different</em></h2>
-      <p class="section-subtitle" style="max-width:560px;margin-left:auto;margin-right:auto;">We don't just address symptoms — we explore what's driving them, so you can build lasting, sustainable wellness.</p>
+<h2 class="section-title">What Makes <em>My Approach Different</em></h2>
+      <p class="section-subtitle" style="max-width:560px;margin-left:auto;margin-right:auto;">I don't just address symptoms — I explore what's driving them, so you can build lasting, sustainable wellness.</p>
       <div class="diff-grid">
         <div class="diff-card">
           <div class="diff-icon">
@@ -114,7 +117,7 @@
           <div class="diff-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--sage-dark)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
           </div>
-          <h3>Education &amp; Empowerment</h3>
+          <h3>Education and Empowerment</h3>
           <p>Helping you understand your body so you can confidently participate and make informed decisions throughout your wellness journey.</p>
         </div>
       </div>
@@ -126,16 +129,15 @@
     <div class="container">
       <div style="display:grid;grid-template-columns:1fr 1.8fr;gap:60px;align-items:start;" class="conditions-layout">
         <div>
-          <span class="section-label">Commonly Supported</span>
-          <h2 class="section-title">Areas We <em>Support</em></h2>
+<h2 class="section-title">Areas <em>I Support</em></h2>
           <p style="color:var(--text-mid);line-height:1.8;margin-bottom:28px;">Functional wellness coaching can offer meaningful support across a wide range of chronic health concerns.</p>
           <button class="btn-sage" onclick="showPage('services')">Explore Services</button>
         </div>
         <div class="conditions-grid">
           <div class="condition-item"><span class="condition-dot"></span>Hormone Balance</div>
           <div class="condition-item"><span class="condition-dot"></span>Digestive Health</div>
-          <div class="condition-item"><span class="condition-dot"></span>Fatigue &amp; Low Energy</div>
-          <div class="condition-item"><span class="condition-dot"></span>Stress &amp; Adrenal Support</div>
+          <div class="condition-item"><span class="condition-dot"></span>Fatigue and Low Energy</div>
+          <div class="condition-item"><span class="condition-dot"></span>Stress and Adrenal Support</div>
           <div class="condition-item"><span class="condition-dot"></span>Thyroid Wellness</div>
           <div class="condition-item"><span class="condition-dot"></span>Blood Sugar Balance</div>
           <div class="condition-item"><span class="condition-dot"></span>Women's Health</div>
@@ -149,15 +151,14 @@
   <!-- Pathway -->
   <section class="section section-sage">
     <div class="container text-center">
-      <span class="section-label">Your Journey</span>
-      <h2 class="section-title">The New Client <em>Pathway</em></h2>
+<h2 class="section-title">The New Client <em>Pathway</em></h2>
       <p class="section-subtitle">A clear, supportive process from your first contact to ongoing wellness.</p>
       <div class="pathway">
         <div class="pathway-step"><div class="pathway-num">1</div><h4>Bio-Terrain Urinalysis</h4></div>
         <div class="pathway-step"><div class="pathway-num">2</div><h4>Wellness Consultation</h4></div>
         <div class="pathway-step"><div class="pathway-num">3</div><h4>Functional Testing</h4></div>
         <div class="pathway-step"><div class="pathway-num">4</div><h4>Personalized Wellness Plan</h4></div>
-        <div class="pathway-step"><div class="pathway-num">5</div><h4>Ongoing Coaching &amp; Support</h4></div>
+        <div class="pathway-step"><div class="pathway-num">5</div><h4>Ongoing Coaching and Support</h4></div>
       </div>
       <div style="margin-top:56px;">
         <button class="btn-primary" onclick="openBooking()">Begin Your Journey</button>
@@ -168,9 +169,8 @@
   <!-- Founding CTA -->
   <section style="background:var(--cream-dark);padding:72px 40px;text-align:center;">
     <div class="container-narrow">
-      <span class="section-label">Limited Availability</span>
-      <h2 class="section-title">Become a <em>Founding Client</em></h2>
-      <p style="color:var(--text-mid);margin-bottom:36px;line-height:1.8;">We're launching with a limited number of Founding Client memberships at special introductory pricing — with lifetime benefits and priority access.</p>
+<h2 class="section-title">Become a <em>Founding Client</em></h2>
+      <p style="color:var(--text-mid);margin-bottom:36px;line-height:1.8;">I'm launching with a limited number of Founding Client memberships at special introductory pricing — with lifetime benefits and priority access.</p>
       <button class="btn-sage" onclick="showPage('founding')">View Founding Client Packages</button>
     </div>
   </section>
@@ -182,9 +182,8 @@
      ══════════════════════════════════════ -->
 <div id="page-about" class="page">
   <div class="page-header">
-    <span class="section-label">Our Story</span>
-    <h1>Meet <em>Julie Miles</em></h1>
-    <p>Founder &amp; Functional Wellness Practitioner — ND, CHHP, CLT</p>
+<h1>Meet <em>Julie Miles, ND, CHHP, CLT</em></h1>
+    <p>Founder and Functional Wellness Practitioner</p>
   </div>
 
   <section class="section">
@@ -205,15 +204,14 @@
           </div>
         </div>
         <div>
-          <span class="section-label">Founder's Story</span>
-          <h2 class="section-title">A Practice Built on <em>Passion &amp; Purpose</em></h2>
+<h2 class="section-title">A Practice Built on<br><em>Passion & Purpose</em></h2>
           <p style="color:var(--text-mid);line-height:1.85;margin-bottom:20px;">My passion for functional wellness grew from both professional experience and personal health challenges.</p>
           <p style="color:var(--text-mid);line-height:1.85;margin-bottom:20px;">After years of helping clients navigate complex health concerns, I became increasingly convinced that many people need more than symptom management. They need someone willing to listen, investigate, educate, and help identify potential underlying contributors to their health concerns.</p>
           <p style="color:var(--text-mid);line-height:1.85;margin-bottom:36px;">North Georgia Functional Wellness was created to provide a personalized, client-centered approach that helps individuals understand their bodies and make informed decisions about their wellness.</p>
 
           <div style="background:var(--cream-dark);border-left:4px solid var(--gold);padding:28px 32px;border-radius:4px;margin-bottom:36px;">
             <p style="font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-style:italic;color:var(--sage-dark);line-height:1.5;margin-bottom:12px;">"I believe true wellness involves caring for the whole person — body, mind, and spirit."</p>
-            <p style="font-size:0.83rem;color:var(--text-light);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">— Julie Miles, ND</p>
+            <p style="font-size:0.83rem;color:var(--text-light);font-weight:700;letter-spacing:0.1em;text-transform:uppercase;">— Julie Miles, ND, CHHP, CLT</p>
           </div>
 
           <h3 style="margin-bottom:14px;">My Philosophy</h3>
@@ -231,9 +229,8 @@
      ══════════════════════════════════════ -->
 <div id="page-services" class="page">
   <div class="page-header">
-    <span class="section-label">What We Offer</span>
-    <h1>Our <em>Services</em></h1>
-    <p>Personalized wellness support tailored to your unique needs and goals.</p>
+<h1>Services</h1>
+    <p>Personalized support tailored to your unique needs and wellness goals.</p>
   </div>
 
   <section class="section">
@@ -288,7 +285,7 @@
 
         <div class="service-card">
           <div class="service-card-head">
-            <h3>Functional Wellness Consultation &amp; Personalized Plan</h3>
+            <h3>Functional Wellness Consultation and Personalized Plan</h3>
             <div class="service-price">$150</div>
           </div>
           <div class="service-card-body">
@@ -299,7 +296,7 @@
 
         <div class="service-card">
           <div class="service-card-head">
-            <h3>Bio-Energetic Testing &amp; Consultation</h3>
+            <h3>Bio-Energetic Testing and Consultation</h3>
             <div class="service-price">$425</div>
           </div>
           <div class="service-card-body">
@@ -311,8 +308,7 @@
       </div>
 
       <div class="testing-box">
-        <span class="section-label">Advanced Options</span>
-        <h3>Functional Testing Options</h3>
+<h2 style="font-size:1.9rem;margin-bottom:14px;">Functional Testing Options</h2>
         <p style="color:var(--text-mid);">Available testing options provide deeper insights to guide personalized wellness strategies. Pricing varies by test.</p>
         <div class="testing-list">
           <div class="testing-item">GI-MAP Comprehensive Stool Analysis</div>
@@ -337,8 +333,7 @@
      ══════════════════════════════════════ -->
 <div id="page-founding" class="page">
   <div class="page-header">
-    <span class="section-label">Limited Availability</span>
-    <h1>Become a <em>Founding Client</em></h1>
+<h1>Become a <em>Founding Client</em></h1>
     <p>Introductory pricing with lifetime benefits — only a limited number of spots available.</p>
   </div>
 
@@ -359,9 +354,9 @@
             <div class="founding-feature"><span class="founding-check">✓</span>Initial Wellness Consultation</div>
             <div class="founding-feature"><span class="founding-check">✓</span>Personalized Wellness Roadmap</div>
             <div class="founding-feature"><span class="founding-check">✓</span>Priority Scheduling</div>
-            <div class="founding-feature"><span class="founding-check">✓</span>50% Off First Bio-Energetic Testing &amp; Consultation</div>
-            <div class="founding-feature"><span class="founding-check">✓</span>Founding Client Status &amp; Ongoing Support</div>
-            <div class="founding-feature"><span class="founding-check">✓</span>15% Lifetime Discount on Services &amp; Supplements</div>
+            <div class="founding-feature"><span class="founding-check">✓</span>50% Off First Bio-Energetic Testing and Consultation</div>
+            <div class="founding-feature"><span class="founding-check">✓</span>Founding Client Status and Ongoing Support</div>
+            <div class="founding-feature"><span class="founding-check">✓</span>15% Lifetime Discount on Services and Supplements</div>
             <div style="margin-top:28px;">
               <button class="btn-sage" style="width:100%;" onclick="openBooking('Founding Client')">Claim This Package</button>
             </div>
@@ -377,9 +372,9 @@
           <div class="founding-card-body">
             <p style="font-size:0.85rem;color:var(--text-light);margin-bottom:14px;">Everything in Founding Client, plus:</p>
             <div class="founding-feature"><span class="founding-check">✓</span>Initial Wellness Consultation</div>
-            <div class="founding-feature"><span class="founding-check">✓</span>Priority Scheduling &amp; Priority Access to New Services</div>
-            <div class="founding-feature"><span class="founding-check">✓</span>50% Off First Bio-Energetic Testing &amp; Consultation</div>
-            <div class="founding-feature"><span class="founding-check">✓</span>15% Lifetime Discount on Services &amp; Supplements</div>
+            <div class="founding-feature"><span class="founding-check">✓</span>Priority Scheduling and Priority Access to New Services</div>
+            <div class="founding-feature"><span class="founding-check">✓</span>50% Off First Bio-Energetic Testing and Consultation</div>
+            <div class="founding-feature"><span class="founding-check">✓</span>15% Lifetime Discount on Services and Supplements</div>
             <div class="founding-feature"><span class="founding-check" style="color:var(--gold);">+</span><strong>GI-MAP Comprehensive Analysis</strong></div>
             <div class="founding-feature"><span class="founding-check" style="color:var(--gold);">+</span><strong>GI-MAP Results Review Consultation</strong></div>
             <div class="founding-feature"><span class="founding-check" style="color:var(--gold);">+</span><strong>DUTCH Complete Hormone Assessment</strong></div>
@@ -394,7 +389,7 @@
 
       <div style="text-align:center;margin-top:48px;padding:36px;background:var(--cream-dark);border-radius:4px;">
         <h3 style="margin-bottom:12px;">Have Questions?</h3>
-        <p style="color:var(--text-mid);margin-bottom:24px;">Reach out to Julie directly to learn more about which package is right for your wellness goals.</p>
+        <p style="color:var(--text-mid);margin-bottom:24px;">Reach out to learn more about which package is right for your wellness goals.</p>
         <button class="btn-sage" onclick="showPage('contact')">Contact Julie</button>
       </div>
     </div>
@@ -407,28 +402,25 @@
      ══════════════════════════════════════ -->
 <div id="page-resources" class="page">
   <div class="page-header">
-    <span class="section-label">Education &amp; Empowerment</span>
-    <h1>Wellness <em>Resources</em></h1>
-    <p>Free guides, articles, and tools to support your wellness journey.</p>
+<h1>Connect and <em>Learn</em></h1>
+    <p>Free guides, resources, and ways to connect on your wellness journey.</p>
   </div>
 
   <section class="section">
     <div class="container">
       <div class="resource-featured">
         <span class="resource-tag">Free Download</span>
-        <h3>The Hidden Connection Between Gut Health, Hormones &amp; Energy</h3>
+        <h3>The Hidden Connection Between Gut Health, Hormones and Energy</h3>
         <p style="color:var(--text-mid);max-width:720px;margin:0 auto 32px;line-height:1.8;">Discover how your digestive health, hormonal balance, and energy levels are deeply interconnected — and what you can do to support all three naturally.</p>
         <button class="btn-sage" onclick="showPage('contact')">Get in Touch</button>
         <button class="btn-sage" onclick="download('GutHormoneEnergy.jpg')">Download Free Guide</button>
       </div>
 
       <div style="margin-top:64px;">
-        <span class="section-label">Coming Soon</span>
-        <h2 class="section-title">More Resources <em>On the Way</em></h2>
+<h2 class="section-title">More <em>Coming Soon</em></h2>
       </div>
       <div class="coming-soon-grid">
         <div class="coming-soon-item"><h4>Wellness Articles</h4><p>In-depth guides on functional wellness topics</p></div>
-        <div class="coming-soon-item"><h4>Blog</h4><p>Tips, insights, and inspiration for daily wellness</p></div>
         <div class="coming-soon-item"><h4>Wellness Tips</h4><p>Practical, actionable strategies you can use today</p></div>
         <div class="coming-soon-item"><h4>Seasonal Resources</h4><p>Health support aligned with the seasons</p></div>
       </div>
@@ -442,8 +434,7 @@
      ══════════════════════════════════════ -->
 <div id="page-faq" class="page">
   <div class="page-header">
-    <span class="section-label">Common Questions</span>
-    <h1>Frequently Asked <em>Questions</em></h1>
+<h1>Frequently Asked <em>Questions</em></h1>
   </div>
 
   <section class="section">
@@ -463,7 +454,7 @@
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">Do you accept insurance?<span class="faq-icon">+</span></button>
-          <div class="faq-answer">No. North Georgia Functional Wellness is a cash-pay wellness practice but some HSA cards are accepted on my client portal. This allows us to focus entirely on your personalized wellness goals without the limitations of insurance-based care.</div>
+          <div class="faq-answer">No. North Georgia Functional Wellness is a cash-pay wellness practice but some HSA cards are accepted on my client portal. This allows me to focus entirely on your personalized wellness goals without the limitations of insurance-based care.</div>
         </div>
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">What ages do you work with?<span class="faq-icon">+</span></button>
@@ -481,7 +472,7 @@
 
       <div style="text-align:center;margin-top:56px;padding:40px;background:var(--cream-dark);border-radius:4px;">
         <h3 style="margin-bottom:12px;">Still Have Questions?</h3>
-        <p style="color:var(--text-mid);margin-bottom:24px;">Reach out directly — Julie is happy to answer any questions before you commit to anything.</p>
+        <p style="color:var(--text-mid);margin-bottom:24px;">Reach out directly. Julie is happy to answer any questions before you commit to anything.</p>
         <button class="btn-sage" onclick="showPage('contact')">Get in Touch</button>
       </div>
     </div>
@@ -494,17 +485,15 @@
      ══════════════════════════════════════ -->
 <div id="page-contact" class="page">
   <div class="page-header">
-    <span class="section-label">Get in Touch</span>
-    <h1>Let's <em>Connect</em></h1>
-    <p>Whether you're looking for answers, support, or a fresh perspective on your wellness journey, we'd love to hear from you.</p>
+<h1>Let's <em>Connect</em></h1>
+    <p>Whether you're looking for answers, support, or a fresh perspective on your wellness journey, I'd love to hear from you.</p>
   </div>
 
   <section class="section">
     <div class="container">
       <div class="contact-grid">
         <div>
-          <span class="section-label">Contact Information</span>
-          <h3 style="font-size:1.8rem;margin-bottom:32px;">Reach Out <em>Directly</em></h3>
+<h3 style="font-size:1.8rem;margin-bottom:32px;">Reach Out <em style="color:var(--gold-light);">Directly</em></h3>
 
           <div class="contact-detail">
             <div class="contact-detail-icon">
@@ -524,7 +513,7 @@
             <div class="contact-detail-icon">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--sage-dark)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
-            <div><strong>Location</strong><p>North Georgia — Cumming &amp; surrounding areas</p></div>
+            <div><strong>Location</strong><p>North Georgia — Cumming and surrounding areas</p></div>
           </div>
 
           <div style="background:var(--cream-dark);padding:22px;border-radius:4px;border-left:3px solid var(--gold);">
@@ -533,14 +522,13 @@
         </div>
 
         <div class="contact-form">
-          <span class="section-label">Send a Message</span>
-          <h3 style="font-size:1.8rem;margin-bottom:28px;">Start the <em>Conversation</em></h3>
+<h3 style="font-size:1.8rem;margin-bottom:28px;">Start the <em style="color:var(--gold-light);">Conversation</em></h3>
           <div class="form-row">
             <div class="form-group"><label>First Name</label><input type="text" placeholder="Your first name"></div>
             <div class="form-group"><label>Last Name</label><input type="text" placeholder="Your last name"></div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+            <div class="form-group"><label>Email Address</label><input type="email" placeholder="name@email.com"></div>
             <div class="form-group"><label>Phone (optional)</label><input type="tel" placeholder="(xxx) xxx-xxxx"></div>
           </div>
           <div class="form-group">
@@ -549,10 +537,10 @@
           </div>
           <div class="form-group">
             <label>Health Goals / Questions</label>
-            <textarea placeholder="Tell us a little about your wellness goals, concerns, or any questions you have..."></textarea>
+            <textarea placeholder="Tell me a little about your wellness goals, concerns, or any questions you have..."></textarea>
           </div>
           <button class="btn-sage" style="width:100%;padding:16px;" onclick="handleFormSubmit(this)">Send Message</button>
-          <p style="font-size:0.8rem;color:var(--text-light);margin-top:12px;text-align:center;">We respect your privacy and never share your information.</p>
+          <p style="font-size:0.8rem;color:var(--text-light);margin-top:12px;text-align:center;">I respect your privacy and never share your information.</p>
         </div>
       </div>
     </div>
@@ -565,16 +553,16 @@
   <div class="footer-grid">
     <div>
       <img src="logo.png" alt="North Georgia Functional Wellness" class="footer-logo">
-      <p style="margin-top:20px;font-size:0.88rem;line-height:1.8;">Personalized functional wellness coaching and support for those seeking root-cause answers to chronic health concerns. Serving North Georgia and virtually nationwide.</p>
+      <p style="margin-top:20px;font-size:0.88rem;line-height:1.8;">Personalized functional wellness coaching and support for those seeking root-cause answers to chronic health concerns. Serving clients in-person in North Georgia and virtually nationwide.</p>
     </div>
     <div>
       <h4>Navigation</h4>
       <ul class="footer-links">
         <li><a href="#" onclick="showPage('home'); return false;">Home</a></li>
         <li><a href="#" onclick="showPage('about'); return false;">About Julie</a></li>
-        <li><a href="#" onclick="showPage('services'); return false;">Services &amp; Pricing</a></li>
+        <li><a href="#" onclick="showPage('services'); return false;">Services and Pricing</a></li>
         <li><a href="#" onclick="showPage('founding'); return false;">Founding Client Program</a></li>
-        <li><a href="#" onclick="showPage('resources'); return false;">Resources</a></li>
+        <li><a href="#" onclick="showPage('resources'); return false;">Connect and Learn</a></li>
         <li><a href="#" onclick="showPage('faq'); return false;">FAQ</a></li>
         <li><a href="#" onclick="showPage('contact'); return false;">Contact</a></li>
       </ul>
@@ -582,18 +570,26 @@
     <div>
       <h4>Contact</h4>
       <p>julie@northgeorgiafunctionalwellness.com</p>
-      <p style="margin-top:12px;">North Georgia<br>Virtual consultations available</p>
+      <p style="margin-top:12px;">Serving clients in-person in North Georgia and virtually nationwide</p>
       <button class="btn-gold" style="margin-top:20px;font-size:11px;padding:10px 20px;" onclick="openBooking()">Book a Consultation</button>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 North Georgia Functional Wellness &mdash; North Georgia Functional Wellness. All rights reserved.</p>
-    <p>northgeorgiafunctionalwellness.com</p>
+  <div class="footer-bottom" style="padding-bottom:80px;">
+    <p>&copy; 2025 North Georgia Functional Wellness. All rights reserved.</p>
+    <p>northgeorgiafunctionalwellness.com &nbsp;|&nbsp; <a href="#" onclick="document.getElementById('disclaimerOverlay').style.display='flex';return false;" style="color:rgba(255,255,255,0.45);text-decoration:underline;">Medical Disclaimer</a></p>
   </div>
 </footer>
 
-<div class="disclaimer">
-  The information provided through North Georgia Functional Wellness is intended for educational and informational purposes only and is not medical advice. Services are not intended to diagnose, treat, cure, or prevent any disease. Please consult your licensed healthcare provider regarding medical concerns and treatment decisions.
+<!-- DISCLAIMER MODAL -->
+<div id="disclaimerOverlay" style="display:none;position:fixed;inset:0;z-index:3000;background:rgba(20,28,18,0.65);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px;" onclick="closeDisclaimer(event)">
+  <div id="disclaimerModal" style="background:var(--cream);border-radius:6px;max-width:600px;width:100%;padding:40px;position:relative;box-shadow:0 24px 64px rgba(20,28,18,0.35);">
+    <button onclick="document.getElementById('disclaimerOverlay').style.display='none';" style="position:absolute;top:16px;right:20px;background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--text-light);line-height:1;">&times;</button>
+    <h3 style="font-size:1.4rem;margin-bottom:16px;color:var(--sage-dark);">Medical Disclaimer</h3>
+    <p style="font-size:0.93rem;color:var(--text-mid);line-height:1.8;">The information provided through North Georgia Functional Wellness is intended for educational and informational purposes only and is not medical advice. Services are not intended to diagnose, treat, cure, or prevent any disease. Please consult your licensed healthcare provider regarding medical concerns and treatment decisions.</p>
+    <div style="margin-top:24px;text-align:right;">
+      <button class="btn-sage" onclick="document.getElementById('disclaimerOverlay').style.display='none';">Close</button>
+    </div>
+  </div>
 </div>
 
 
@@ -608,7 +604,7 @@
     <div class="booking-modal-head">
       <div>
         <h2>Book a Consultation</h2>
-        <p>North Georgia Functional Wellness — Julie Miles, ND</p>
+        <p>North Georgia Functional Wellness — Julie Miles, ND, CHHP, CLT</p>
       </div>
       <button class="booking-close" onclick="closeBooking()">&times;</button>
     </div>
@@ -616,7 +612,7 @@
     <div class="booking-progress" id="bookingProgress">
       <div class="bprog-step active" id="prog-1"><div class="bprog-dot active">1</div><span class="bprog-label">Service</span></div>
       <div class="bprog-line" id="pline-1"></div>
-      <div class="bprog-step" id="prog-2"><div class="bprog-dot">2</div><span class="bprog-label">Date &amp; Time</span></div>
+      <div class="bprog-step" id="prog-2"><div class="bprog-dot">2</div><span class="bprog-label">Date and Time</span></div>
       <div class="bprog-line" id="pline-2"></div>
       <div class="bprog-step" id="prog-3"><div class="bprog-dot">3</div><span class="bprog-label">Your Info</span></div>
       <div class="bprog-line" id="pline-3"></div>
@@ -634,19 +630,19 @@
           <div class="bsvc-item" onclick="selectService(this,'Wellness Coaching',75,'45 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Wellness Coaching</h4><p>45 min &bull; Virtual available</p></div><div class="bsvc-price">$75</div></div>
           <div class="bsvc-item" onclick="selectService(this,'Assisted Lymphatic Therapy',99,'60 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Assisted Lymphatic Therapy</h4><p>60 min &bull; In-person</p></div><div class="bsvc-price">$99</div></div>
           <div class="bsvc-item" onclick="selectService(this,'Functional Lab Consultation',125,'60 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Functional Lab Consultation</h4><p>60 min &bull; Virtual available</p></div><div class="bsvc-price">$125</div></div>
-          <div class="bsvc-item" onclick="selectService(this,'Functional Wellness Consultation &amp; Personalized Plan',150,'75 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Functional Wellness Consultation &amp; Personalized Plan</h4><p>75 min &bull; Virtual available</p></div><div class="bsvc-price">$150</div></div>
-          <div class="bsvc-item" onclick="selectService(this,'Bio-Energetic Testing &amp; Consultation',425,'90 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Bio-Energetic Testing &amp; Consultation</h4><p>90 min &bull; In-person</p></div><div class="bsvc-price">$425</div></div>
+          <div class="bsvc-item" onclick="selectService(this,'Functional Wellness Consultation and Personalized Plan',150,'75 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Functional Wellness Consultation and Personalized Plan</h4><p>75 min &bull; Virtual available</p></div><div class="bsvc-price">$150</div></div>
+          <div class="bsvc-item" onclick="selectService(this,'Bio-Energetic Testing and Consultation',425,'90 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Bio-Energetic Testing and Consultation</h4><p>90 min &bull; In-person</p></div><div class="bsvc-price">$425</div></div>
           <div class="bsvc-item" onclick="selectService(this,'Founding Client Package',547,'75 min')"><div class="bsvc-radio"></div><div class="bsvc-info"><h4>Founding Client Package</h4><p>75 min &bull; Introductory</p></div><div class="bsvc-price">$547</div></div>
         </div>
         <div class="booking-nav">
           <span></span>
-          <button class="btn-sage" onclick="goToStep(2)" id="step1Next" disabled style="opacity:0.4;cursor:not-allowed;">Choose Date &amp; Time &rarr;</button>
+          <button class="btn-sage" onclick="goToStep(2)" id="step1Next" disabled style="opacity:0.4;cursor:not-allowed;">Choose Date and Time &rarr;</button>
         </div>
       </div>
 
       <!-- Step 2 -->
       <div class="booking-step" id="bstep-2">
-        <h3>Select Date &amp; Time</h3>
+        <h3>Select Date and Time</h3>
         <p>Choose your preferred appointment date and time. All times are Eastern Time (ET).</p>
         <div class="bdate-grid">
           <div>
@@ -686,21 +682,21 @@
           <div class="bform-group"><label>Preferred Contact</label><select id="bf-contact"><option>Email</option><option>Phone</option><option>Either</option></select></div>
           <div class="bform-group"><label>New or Returning Client</label><select id="bf-newret"><option>New Client</option><option>Returning Client</option></select></div>
           <div class="bform-group binfo-full"><label>Health Goals / Primary Concerns</label><textarea id="bf-goals" placeholder="Briefly describe your main health concerns or wellness goals so Julie can best prepare..."></textarea></div>
-          <div class="bform-group binfo-full"><label>How Did You Hear About Us?</label><select id="bf-referral"><option value="">Select one</option><option>Google Search</option><option>Social Media</option><option>Friend or Family</option><option>Healthcare Provider</option><option>Other</option></select></div>
+          <div class="bform-group binfo-full"><label>How Did You Find Me?</label><select id="bf-referral"><option value="">Select one</option><option>Google Search</option><option>Social Media</option><option>Friend or Family</option><option>Healthcare Provider</option><option>Other</option></select></div>
         </div>
         <div style="background:var(--cream-dark);border-radius:4px;padding:12px 16px;font-size:0.82rem;color:var(--text-light);margin-top:6px;">Your information is private and used only to prepare for your appointment.</div>
         <div class="booking-nav">
           <button class="btn-sage" style="background:transparent;color:var(--sage-dark);border:1.5px solid var(--sage-dark);" onclick="goToStep(2)">&larr; Back</button>
-          <button class="btn-sage" onclick="goToStep(4)" id="step3Next" disabled style="opacity:0.4;cursor:not-allowed;">Review &amp; Confirm &rarr;</button>
+          <button class="btn-sage" onclick="goToStep(4)" id="step3Next" disabled style="opacity:0.4;cursor:not-allowed;">Review and Confirm &rarr;</button>
         </div>
       </div>
 
       <!-- Step 4 -->
       <div class="booking-step" id="bstep-4">
-        <h3>Review &amp; Confirm</h3>
+        <h3>Review and Confirm</h3>
         <p>Please review your appointment details before confirming.</p>
         <div class="bconfirm-box">
-          <div class="bconfirm-head"><div><h4 id="confirm-service"></h4><p>North Georgia Functional Wellness — Julie Miles, ND</p></div></div>
+          <div class="bconfirm-head"><div><h4 id="confirm-service"></h4><p>North Georgia Functional Wellness — Julie Miles, ND, CHHP, CLT</p></div></div>
           <div class="bconfirm-rows">
             <div class="bconfirm-row"><strong>Date</strong><span id="confirm-date"></span></div>
             <div class="bconfirm-row"><strong>Time</strong><span id="confirm-time"></span></div>
@@ -738,6 +734,12 @@
   </div>
 </div>
 
+<script>
+function closeDisclaimer(e) {
+  if (e.target === document.getElementById('disclaimerOverlay'))
+    document.getElementById('disclaimerOverlay').style.display = 'none';
+}
+</script>
 <script src="booking.js"></script>
 </body>
 </html>
