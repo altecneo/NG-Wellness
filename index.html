@@ -522,24 +522,55 @@
         </div>
 
         <div class="contact-form">
-<h3 style="font-size:1.8rem;margin-bottom:28px;">Start the <em style="color:var(--gold-light);">Conversation</em></h3>
+          <h3 style="font-size:1.8rem;margin-bottom:28px;">Start the <em style="color:var(--gold-light);">Conversation</em></h3>
+
+          <!-- Success / Error banners (hidden by default) -->
+          <div id="cf-success" style="display:none;background:#EFF6F0;border:1px solid var(--sage-light);border-left:4px solid var(--sage);padding:16px 20px;border-radius:4px;margin-bottom:20px;font-size:0.93rem;color:var(--text-mid);">
+            ✓ &nbsp;Your message was sent! Julie will be in touch within 1–2 business days.
+          </div>
+          <div id="cf-error" style="display:none;background:#FDF2F2;border:1px solid #E8B4B4;border-left:4px solid #C0392B;padding:16px 20px;border-radius:4px;margin-bottom:20px;font-size:0.93rem;color:#7B241C;">
+            Something went wrong. Please try again or email <a href="mailto:julie@northgeorgiafunctionalwellness.com" style="color:#7B241C;text-decoration:underline;">julie@northgeorgiafunctionalwellness.com</a> directly.
+          </div>
+
           <div class="form-row">
-            <div class="form-group"><label>First Name</label><input type="text" placeholder="Your first name"></div>
-            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Your last name"></div>
+            <div class="form-group">
+              <label for="cf-fname">First Name *</label>
+              <input type="text" id="cf-fname" name="fname" placeholder="Your first name" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-lname">Last Name *</label>
+              <input type="text" id="cf-lname" name="lname" placeholder="Your last name" required>
+            </div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Email Address</label><input type="email" placeholder="name@email.com"></div>
-            <div class="form-group"><label>Phone (optional)</label><input type="tel" placeholder="(xxx) xxx-xxxx"></div>
+            <div class="form-group">
+              <label for="cf-email">Email Address *</label>
+              <input type="email" id="cf-email" name="email" placeholder="name@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="cf-phone">Phone (optional)</label>
+              <input type="tel" id="cf-phone" name="phone" placeholder="(xxx) xxx-xxxx">
+            </div>
           </div>
           <div class="form-group">
-            <label>Preferred Contact Method</label>
-            <select><option>Email</option><option>Phone</option><option>Either</option></select>
+            <label for="cf-contact">Preferred Contact Method</label>
+            <select id="cf-contact" name="preferred_contact">
+              <option>Email</option>
+              <option>Phone</option>
+              <option>Either</option>
+            </select>
           </div>
           <div class="form-group">
-            <label>Health Goals / Questions</label>
-            <textarea placeholder="Tell me a little about your wellness goals, concerns, or any questions you have..."></textarea>
+            <label for="cf-message">Health Goals / Questions</label>
+            <textarea id="cf-message" name="message" placeholder="Tell me a little about your wellness goals, concerns, or any questions you have..."></textarea>
           </div>
-          <button class="btn-sage" style="width:100%;padding:16px;" onclick="handleFormSubmit(this)">Send Message</button>
+
+          <!-- Honeypot — hidden from humans, traps bots -->
+          <div style="display:none;" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button id="cf-submit" class="btn-sage" style="width:100%;padding:16px;" onclick="submitContactForm(event)">Send Message</button>
           <p style="font-size:0.8rem;color:var(--text-light);margin-top:12px;text-align:center;">I respect your privacy and never share your information.</p>
         </div>
       </div>
@@ -738,6 +769,69 @@
 function closeDisclaimer(e) {
   if (e.target === document.getElementById('disclaimerOverlay'))
     document.getElementById('disclaimerOverlay').style.display = 'none';
+}
+
+// ─── CONTACT FORM → PHP MAILER ─────────────────────────────
+function submitContactForm(e) {
+  e.preventDefault();
+
+  const fname   = document.getElementById('cf-fname').value.trim();
+  const lname   = document.getElementById('cf-lname').value.trim();
+  const email   = document.getElementById('cf-email').value.trim();
+  const phone   = document.getElementById('cf-phone').value.trim();
+  const contact = document.getElementById('cf-contact').value;
+  const message = document.getElementById('cf-message').value.trim();
+  const honey   = document.querySelector('input[name="website"]').value;
+
+  // Client-side validation
+  if (!fname || !lname) { alert('Please enter your first and last name.'); return; }
+  if (!email || !email.includes('@')) { alert('Please enter a valid email address.'); return; }
+
+  // Bot check
+  if (honey) return;
+
+  const btn = document.getElementById('cf-submit');
+  btn.textContent = 'Sending…';
+  btn.disabled    = true;
+  btn.style.opacity = '0.7';
+
+  // Build form payload
+  const payload = new FormData();
+  payload.append('fname',             fname);
+  payload.append('lname',             lname);
+  payload.append('email',             email);
+  payload.append('phone',             phone || 'Not provided');
+  payload.append('preferred_contact', contact);
+  payload.append('message',           message || 'No message provided');
+
+  fetch('contact.php', {
+    method: 'POST',
+    body:   payload
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.success) {
+      document.getElementById('cf-success').style.display = 'block';
+      document.getElementById('cf-error').style.display   = 'none';
+      // Clear form
+      ['cf-fname','cf-lname','cf-email','cf-phone','cf-message'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      btn.textContent  = 'Message Sent ✓';
+      btn.style.background = 'var(--sage-mid)';
+      btn.style.opacity    = '1';
+    } else {
+      throw new Error(data.error || 'Unknown error');
+    }
+  })
+  .catch(err => {
+    console.error('Contact form error:', err);
+    document.getElementById('cf-error').style.display   = 'block';
+    document.getElementById('cf-success').style.display = 'none';
+    btn.textContent  = 'Send Message';
+    btn.disabled     = false;
+    btn.style.opacity = '1';
+  });
 }
 </script>
 <script src="booking.js"></script>
